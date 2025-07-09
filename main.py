@@ -10,7 +10,7 @@ if uploaded_file is not None:
     data = pd.read_csv(uploaded_file)
     st.write(data.head())
 
-data = pd.read_csv("DATASET_PUSKESMAS_RANDOM_ALOKASI_REALISASI.csv") 
+data = pd.read_csv("realisasi_puskesmas.csv") 
 
 print(data.columns)
 
