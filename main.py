@@ -14,14 +14,6 @@ print("sebelum dibersihkan:", jumlah_sebelum)
 jumlah_setelah = len(df)
 print("Setelah dibersihkan:", jumlah_setelah)
 
-kolom_dibutuhkan = [
-    "Nama Puskesmas", "Kode Puskesmas", "Karakter Puskesmas", "Provinsi",
-    "NAMA KAB/KOTA", "TAHUN", "FS1", "FA1", "HP1", "PR1", "REALISASI BELANJA (RP)", "ALOKASI BELANJA (RP)"
-]
-df_subset = df[kolom_dibutuhkan]
-
-df_subset.to_csv("realisasi_puskesmas.csv", index=False)
-
 # def format_rupiah_singkat(angka):
 #     if angka >= 1_000_000_000_000:
 #         return f"Rp {angka / 1_000_000_000_000:.2f} Triliun"
