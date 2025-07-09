@@ -3,6 +3,12 @@ import vizro.plotly.express as px
 import vizro.models as vm
 from vizro import Vizro
 from vizro.tables import dash_ag_grid
+import streamlit as st
+
+uploaded_file = st.file_uploader("Upload file CSV")
+if uploaded_file is not None:
+    data = pd.read_csv(uploaded_file)
+    st.write(data.head())
 
 data = pd.read_csv("DATASET_PUSKESMAS_RANDOM_ALOKASI_REALISASI.csv") 
 
