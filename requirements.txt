@@ -1,4 +1,4 @@
 streamlit==1.33.0
+vizro>=0.1.42
 plotly
-vizro
 pandas
